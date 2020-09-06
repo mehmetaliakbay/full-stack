@@ -1,0 +1,11 @@
+note over browser:
+user writes text to input field and 
+when user click the button
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa 
+note over browser:
+browser makes http post request with json payload
+{content: "hello everyone", date: "2020-09-06T13:07:49.934Z"}
+end note
+server-->browser: 201 created
+
